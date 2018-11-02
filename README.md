@@ -1,5 +1,9 @@
 # Desktop Database App
 
 - Desktop Application for viewing, searching, updating, inserting, and deleting books from a books database
-- Frontend uses GUI built with tkinter
-- Backend uses SQLite3 database
+
+### Tech Used
+
+- Tkinter to build front end GUI
+- SQLite3 as back end database
+
