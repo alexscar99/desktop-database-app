@@ -20,7 +20,7 @@ def insert_book(title, author, year, isbn):
     conn.close()
 
 
-def view_all_books():
+def view_books():
     conn = sqlite3.connect("books.db")
     cur = conn.cursor()
     cur.execute("SELECT * FROM book")
@@ -29,7 +29,7 @@ def view_all_books():
     return rows
 
 
-def search_for_book(title="", author="", year="", isbn=""):
+def search_book(title="", author="", year="", isbn=""):
     conn = sqlite3.connect("books.db")
     cur = conn.cursor()
     cur.execute(
@@ -59,8 +59,3 @@ def update_book(id, title, author, year, isbn):
 
 
 connect_db()
-# insert_book("The Sun", "Bob Johnson", 1930, 3767238)
-# delete_book(1)
-update_book(3, "The moon", "Bob Jackson", 1932, 46478399)
-print(view_all_books())
-print(search_for_book(author="Bob Jackson"))
