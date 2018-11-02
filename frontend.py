@@ -1,4 +1,4 @@
-from tkinter import *
+from tkinter import Tk, Label, Entry, StringVar, Listbox, Scrollbar, Button
 import backend
 
 window = Tk()
